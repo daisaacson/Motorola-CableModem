@@ -1,11 +1,11 @@
-$motorola = "xxx192.168.100.1"
-$motorolauser = "xxxadmin"
-$motorolapassword = ConvertTo-SecureString -String "xxxmotorola" -AsPlainText -Force
+$motorola = "192.168.100.1"
+$motorolauser = "admin"
+$motorolapassword = ConvertTo-SecureString -String "motorola" -AsPlainText -Force
 $motorolaURIs = @{"MotoHome" = "/MotoHome.asp"
-                   ;"MotoSwInfo" = "/MotoSwInfo.asp"
-                   ;"MotoConnection" = "/MotoConnection.asp"
-                   ;"MotoSecurity" = "/MotoSecurity.asp"
-                   ;"MotoSnmpLog" = "/MotoSnmpLog.asp"
+                 ;"MotoSwInfo" = "/MotoSwInfo.asp"
+                 ;"MotoConnection" = "/MotoConnection.asp"
+                 ;"MotoSecurity" = "/MotoSecurity.asp"
+                 ;"MotoSnmpLog" = "/MotoSnmpLog.asp"
                 }
 
 $Script:MotorolaSession=$null
